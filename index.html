@@ -1,0 +1,18 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    </head>
+
+    <body>
+        <a-scene>
+            <a-assets timeout="2500">
+                <a-asset-item id = 'tableOBJ' src="./model/tinker.obj"></a-asset-item>
+                <a-asset-item id = 'tableMTL' src="./model/obj.mtl"></a-asset-item>
+            </a-assets>
+
+    <a-entity obj-model = 'obj: #tableOBJ; mtl:#tableMTL' position = '0 1 -1.5' rotation = '-90 0 0' scale = '0.01 0.01 0.01'></a-entity>
+        </a-scene>
+    </body>
+</html>
